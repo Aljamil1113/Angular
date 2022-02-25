@@ -1,6 +1,9 @@
 # Angular
 Angular JS sample
 
+# If Download porject then install node_modules
+npm install
+
 # SETUP install angular libraries
 node -v
 npm -v

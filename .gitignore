@@ -1,9 +1,11 @@
 node_modules
+.angular
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
 /dist
+/.angular/*
 /tmp
 /out-tsc
 /bazel-out
@@ -31,8 +33,6 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache/
-.angular/cache/
 .sass-cache/
 /connect.lock
 /coverage

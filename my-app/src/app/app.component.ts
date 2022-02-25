@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  memberName = 'Brock Lesnar'
+  memberName = 'Brock Lesnar';
 
+  language: string = '';
+  listOfLanguages: string[] = ['English', 'Hindi', 'Spanish'];
 
   addLanguage(){
     console.log("addLanguage() called!");
+    this.listOfLanguages.push(this.language);
+
+    console.log(this.listOfLanguages);
   }
 
 }

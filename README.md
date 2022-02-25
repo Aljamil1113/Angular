@@ -12,3 +12,7 @@ ng new my-app
 # To RUN AND BUILD
 ng serve
 ng build
+
+# To Create New Component
+ng generate component <name>
+ng g c <name>

@@ -1,4 +1,14 @@
 <h1>Hello World!</h1>
 <h2>I am {{ memberName }}</h2>
 <input type="text" [(ngModel)]="language" />
+
+<p>My language is {{ language }}</p>
+
 <button (click)="addLanguage()">Add Language</button>
+
+<h3>List of Languages</h3>
+<ul>
+    <li *ngFor="let lang of listOfLanguages">
+       {{ lang }}
+    </li>
+</ul>

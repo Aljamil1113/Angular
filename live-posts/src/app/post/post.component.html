@@ -1,7 +1,7 @@
-<h4>Nature</h4>
-<p>Ural mountains is a long and wide range mountains on Russsia.</p>
-<img src="https://peakvisor.com/img/news/Ural-mountains-South-Ural-Ridge.jpg" alt="" class="img-responsive">
+<h4>{{ post?.title }}</h4>
+<p>{{ post?.description }}</p>
+<img src="{{ post?.imagePath }}" alt="" class="img-responsiveng">
 
-<p>Author: test@test.com</p>
-<p>Date: 1 Jan 2021</p>
+<p>Author: {{ post?.author }}</p>
+<p>Date: {{ post?.dateTimeCreated }} </p>
 <button>Edit</button> | <button>Delete</button>

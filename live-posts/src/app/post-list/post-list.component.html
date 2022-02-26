@@ -1,4 +1,7 @@
-<h3>Lates posts...</h3>
-<app-post></app-post>
+<h3>Latest posts...</h3>
+<div *ngFor="let post of listOfPosts">
+    <app-post [post]="post"></app-post>
+</div>
+
 
 

@@ -10,8 +10,13 @@ import { AuthComponent } from './auth/auth.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {
+     path: '',
+     redirectTo: '/post-lists',
+     pathMatch: 'full'
+  },
 {
-  path: 'post-list',
+  path: 'post-lists',
   component: PostListComponent
 },
 {

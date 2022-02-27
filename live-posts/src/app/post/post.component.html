@@ -4,4 +4,4 @@
 
 <p>Author: {{ post?.author }}</p>
 <p>Date: {{ post?.dateTimeCreated }} </p>
-<button>Edit</button> | <button>Delete</button>
+<button>Edit</button> | <button (click)="onDeletePost()">Delete</button>

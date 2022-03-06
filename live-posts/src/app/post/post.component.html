@@ -4,4 +4,10 @@
 
 <p>Author: {{ post?.author }}</p>
 <p>Date: {{ post?.dateTimeCreated }} </p>
-<button class="btn btn-success" (click)="onEdit()">Edit</button> | <button class="btn btn-danger" (click)="onDeletePost()">Delete</button>
+
+
+<button type="button" class="btn btn-default btn-sm" (click)="likeFunction()" >
+    <span class="glyphicon glyphicon-thumbs-up" ></span> Likes: {{ post?.numberOfLikes }} 
+</button> <br> <br>
+<button class="btn btn-success" (click)="onEdit()">Edit</button> 
+| <button class="btn btn-danger" (click)="onDeletePost()">Delete</button>

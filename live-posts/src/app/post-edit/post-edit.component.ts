@@ -50,7 +50,8 @@ export class PostEditComponent implements OnInit {
 
     const post: Post = new Post(
       title, description, imagePath,
-      'test@test.com', new Date()
+      'test@test.com', new Date(),
+      0
     );
 
     if(this.editMode) {

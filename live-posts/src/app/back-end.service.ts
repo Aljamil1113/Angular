@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Post } from "./post.model";
 import { PostService } from "./post.service";
+import { tap } from 'rxjs/operators';
 
 /*
   https://live-posts-c2790-default-rtdb.firebaseio.com/
@@ -22,4 +23,11 @@ export class BackEndService {
         });
     }
     //Fun 2 - Fetch
+    fetchData() {
+        this.http.get<Post[]>('https://live-posts-c2790-default-rtdb.firebaseio.com/posts.json')
+        .pipe(tap((listOfPosts: Post[]) => {
+            console.log(listOfPosts);
+            this.posstService.setPosts(listOfPosts);
+        })).subscribe();
+    }
 }

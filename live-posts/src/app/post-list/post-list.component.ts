@@ -15,5 +15,8 @@ export class PostListComponent implements OnInit {
 
   ngOnInit(): void {
     this.listOfPosts = this.postService.getPosts();
+    this.postService.listFromFirebase.subscribe((listOfPosts: Post[]) => {
+      this.listOfPosts = this.postService.getPosts();
+    })
   }
 }
